@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Kau Yatun | Un lindo hotel</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"> 
+</head>
+<body>  
+  <!-- nav+header+main>section#section$*2aside -->
+  
+  <div id="top"></div>
+  <nav>
+    <!-- Logo -->
+    <a href="#top">
+      <h1>
+        <img src="images/logo.png" alt="Hotel Kau Yatun">
+      </h1>
+    </a>
+
+    <!-- Menú de navegación -->
+    <ul>
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#habitaciones">Habitaciones</a></li>
+      <li><a href="#promos">Promos</a></li>
+      <li><a href="#servicios">Servicios</a></li>
+      <li><a href="restaurante.html">Restaurante</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <!-- Idioma -->
+    <ul>
+      <li>
+        <a href="#">
+          <img src="images/esp.jpg" alt="">
+        </a>
+      </li>
+      <li><a href="en/index.html"><img src="images/flag-en.png" alt=""></a></li>
+    </ul>
+  </nav>
+
+  <header>
+    <!-- Plugin de jQuery -->
+    <!-- Slider con bxslider.com -->
+    <div class="bxslider">
+      <div><img src="images/01.jpg" title="Funky roots"></div>
+      <div><img src="https://via.placeholder.com/1400x400?text=SLIDER" title="Funky roots"></div>
+      <!-- <div><img src="/assets/images/coffee2.jpg" title="The long and winding road"></div>
+      <div><img src="/assets/images/coffee3.jpg" title="Happy trees"></div> -->
+    </div>
+
+    <h2>Tierra de libertad y relax</h2>
+
+    <!-- Formulario -->
+    <form action="procesar-formulario.php" method="post">
+      <!-- <label for="nombre" id="nombre">Nombre y apellido</label> -->
+      <input type="text" name="nombre" placeholder="Nombre y apellido">
+      <input type="email" name="emial" autofocus="true" placeholder="Email" required>
+      <label for="check-in">Check-in</label>      
+      <input type="date" name="check-in">
+      <label for="check-out">Check-out</label>  
+      <input type="date" name="check-out">
+
+      <select name="habitacion" id="">
+        <option value="economy">Economy</option>
+        <option value="superior" selected>Superior</option>
+        <option value="suite">Suite</option>
+      </select>
+
+      <!-- <input type="submit" value="Enviar"> -->
+      <button type="button">Enviar</button>
+    </form>    
+  </header>
+
+  <!-- Contenido central del sitio -->
+  <main>    
+    <section id="habitaciones">
+      <h2>Habitaciones</h2>
+      <article>
+        <img src="https://via.placeholder.com/200?text=IMG" alt="">
+        <h3>Standard</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum similique doloribus ratione ex velit tempore, sit earum</p>
+        <a href="#modal-hab-standard">ver [+]</a>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/200?text=IMG" alt="">
+        <h3>Intermedia</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum similique doloribus ratione ex velit tempore, sit earum</p>
+        <a href="#modal-hab-intermedia">ver [+]</a>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/200?text=IMG" alt="">
+        <h3>Standard</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum similique doloribus ratione ex velit tempore, sit earum</p>
+        <a href="#/">ver [+]</a>
+      </article>
+    </section>
+
+    <hr>
+    <section id="promos">
+      <h2>Promociones</h2>
+      <article>
+        <img src="https://via.placeholder.com/200?text=IMG" alt="">
+        <h3>Tempoarada baja</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum similique doloribus ratione ex velit tempore, sit earum</p>
+        <div>
+          <img src="images/icons/spoon-knife.png" alt="">
+          <img src="images/icons/spoon-knife.png" alt="">
+          <img src="images/icons/spoon-knife.png" alt="">
+        </div>
+        <a href="#/">ver [+]</a>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/200?text=IMG" alt="">
+        <h3>Tempoarada media</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum similique doloribus ratione ex velit tempore, sit earum</p>
+        <div>
+          <img src="images/icons/spoon-knife.png" alt="">
+          <img src="images/icons/spoon-knife.png" alt="">
+          <img src="images/icons/spoon-knife.png" alt="">
+        </div>
+        <a href="#/">ver [+]</a>
+      </article>
+      <article>
+        <img src="https://via.placeholder.com/200?text=IMG" alt="">
+        <h3>Tempoarada alta</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum similique doloribus ratione ex velit tempore, sit earum</p>
+        <div>
+          <img src="images/icons/spoon-knife.png" alt="">
+          <img src="images/icons/spoon-knife.png" alt="">
+          <img src="images/icons/spoon-knife.png" alt="">
+        </div>
+        <a href="#/">ver [+]</a>
+      </article>
+    </section>
+
+    <hr>
+    <!-- Acá irá una imagen de fondo, fija, con opiniones de clientes -->
+    <aside id="opinion-clientes">
+      <h3>Primera opinión</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, mollitia possimus voluptates maiores</p>
+    </aside>
+    <hr>
+    <section id="servicios">
+      <h2>Servicios</h2>
+      <article>
+        <img src="images/icons/lock.png" alt="">
+        <h3>Cajas de seguridad</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, mollitia possimus voluptates maiores</p>
+        <a href="#/">ver [+]</a>
+      </article>
+      <article>
+        <img src="images/icons/lock.png" alt="">
+        <h3>Cajas de seguridad</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, mollitia possimus voluptates maiores</p>
+        <a href="#/">ver [+]</a>
+      </article>
+      <article>
+        <img src="images/icons/lock.png" alt="">
+        <h3>Cajas de seguridad</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, mollitia possimus voluptates maiores</p>
+        <a href="#/">ver [+]</a>
+      </article>
+    </section>
+
+    <hr>
+    <aside id="contacto">
+      <div>
+        <img src="images/logo.png" alt="">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit libero excepturi, asperiores aspernatur</p>
+      </div>
+      <div>
+        <form action="procesar-fromulario.php" method="post">
+          <input type="text" placeholder="Nombre y apellido">
+          <input type="email" placeholder="Email">
+          <textarea name="mensaje" id="" cols="30" rows="10">
+            Tu mensaje...
+          </textarea>
+          <input type="submit" value="Enviar">
+        </form>
+      </div>
+    </aside>
+    <hr>    
+  </main>
+
+  <footer>
+    <div id="mapa">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d162953.47192937968!2d-72.24261060839844!3d-50.345144905180064!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbdbb0c93f2ec2759%3A0xa17ac7246faa45c1!2sTremun%20Kau%20Yatun%20Hotel%20de%20Campo!5e0!3m2!1ses!2sar!4v1572870450106!5m2!1ses!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    </div>
+    <div id="developer">
+      <div>Desarrollado con <img src="images/corazon.png" alt=""> por Livingtheweb!s</div>
+    </div>
+  </footer>
+  
+
+<!-- ---------------------
+  Acá pondré el cointenido 
+  de las ventanas modales 
+---------------------------->
+<!-- Modal habitacion standar -->
+<!-- <div id="modal-hab-standard">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> -->
+<!-- Modal habitacion  -->
+<!-- <div id="modal-hab-intermedia">
+  <div>
+    <a href="#">Cerrar</a>
+    <h3>Título de la ventana modal</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, dolorum sed architecto cum eos obcaecati molestiae accusamus commodi tempore</p>
+  </div>
+</div> 
+-->
+
+
+
+</body>
+</html>
